@@ -19,7 +19,7 @@ function exportHTML(e){
        var fileDownload = document.createElement("a");
        document.body.appendChild(fileDownload);
        fileDownload.href = source;
-       fileDownload.download = 'document.doc';
+       fileDownload.download = document.querySelector("h1").innerText + ".doc";
        fileDownload.click();
        document.body.removeChild(fileDownload);
     }
